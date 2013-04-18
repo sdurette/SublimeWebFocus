@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BBEditDocumentType</key>
+	<string>CodelessLanguageModule</string>
+	<key>BBLMLanguageDisplayName</key>
+	<string>WebFOCUS</string>
+	<key>BBLMLanguageCode</key>
+	<string>WebF</string>
+	<key>BBLMColorsSyntax</key>
+	<true/>
+	<key>BBLMScansFunctions</key>
+	<true/>
+	<key>BBLMIsCaseSensitive</key>
+	<true/>
+	<key>BBLMKeywordList</key>
+	<array>
+		<string>ACROSS</string>
+		<string>ACTUAL</string>
+		<string>ALIAS</string>
+		<string>ALL</string>
+		<string>AND</string>
+		<string>AS</string>
+		<string>BY</string>
+		<string>CENTER</string>
+		<string>CLEAR</string>
+		<string>COMPUTE</string>
+		<string>CONTAINS</string>
+		<string>DECODE</string>
+		<string>DEFINE</string>
+		<string>EDIT</string>
+		<string>END</string>
+		<string>ENDSTYLE</string>
+		<string>EXCLUDES</string>
+		<string>FIELDNAME</string>
+		<string>FIELDTYPE</string>
+		<string>FILE</string>
+		<string>FILENAME</string>
+		<string>FOLD-LINE</string>
+		<string>FOOTING</string>
+		<string>FORMAT</string>
+		<string>FROM</string>
+		<string>GE</string>
+		<string>GRAPH</string>
+		<string>GT</string>
+		<string>HEADING</string>
+		<string>HOLD</string>
+		<string>IF</string>
+		<string>IN</string>
+		<string>INCLUDES</string>
+		<string>INDEX</string>
+		<string>JOIN</string>
+		<string>LAST</string>
+		<string>LE</string>
+		<string>MISSING</string>
+		<string>MORE</string>
+		<string>MULTILINES</string>
+		<string>NE</string>
+		<string>NEW-NOT-OLD</string>
+		<string>NEW</string>
+		<string>NOPRINT</string>
+		<string>NOSPLIT</string>
+		<string>OLD-AND-NEW</string>
+		<string>OLD-NOR-NEW</string>
+		<string>OLD-NOT-NEW</string>
+		<string>OLD-OR-NEW</string>
+		<string>OLD</string>
+		<string>OMITS</string>
+		<string>ON</string>
+		<string>OR</string>
+		<string>PAGE-BREAK</string>
+		<string>PCHOLD</string>
+		<string>PRINT</string>
+		<string>RECAP</string>
+		<string>RECOMPUTE</string>
+		<string>REPAGE</string>
+		<string>RUN</string>
+		<string>SEGMENT</string>
+		<string>SEGTYPE</string>
+		<string>SET</string>
+		<string>SKIP-LINE</string>
+		<string>STYLE</string>
+		<string>SUB-TOTAL</string>
+		<string>SUBFOOT</string>
+		<string>SUBHEAD</string>
+		<string>SUBTOTAL</string>
+		<string>SUFFIX</string>
+		<string>SUM</string>
+		<string>SUMMARIZE</string>
+		<string>TABLE</string>
+		<string>TABLEF</string>
+		<string>TO</string>
+		<string>TOTAL</string>
+		<string>UNDER-LINE</string>
+		<string>USAGE</string>
+		<string>WHEN</string>
+		<string>WHERE</string>
+	</array>
+	<key>BBLMSuffixMap</key>
+	<array>
+		<dict>
+			<key>BBLMLanguageSuffix</key>
+			<string>.fex</string>
+		</dict>
+		<dict>
+			<key>BBLMLanguageSuffix</key>
+			<string>.mas</string>
+		</dict>
+	</array>
+	<key>Language Features</key>
+	<dict>
+		<key>Open Line Comments</key>
+		<string>-*</string>
+		<key>Identifier and Keyword Character Class</key>
+		<string>A-Za-z0-9_\?!</string>
+		<key>Open Strings 1</key>               
+		<string>"</string>
+		<key>Close Strings 1</key>              
+		<string>"</string>
+		<key>Open Strings 2</key>               
+		<string>'</string>
+		<key>Close Strings 2</key>              
+		<string>'</string>
+		<key>Prefix for Functions</key>     
+		<string>TABLE FILE</string>
+	</dict>
+</dict>
+</plist>

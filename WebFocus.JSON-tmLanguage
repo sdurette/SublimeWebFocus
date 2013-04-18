@@ -1,0 +1,75 @@
+{ "name": "WebFocus",
+  "scopeName": "source.webfocus",
+  "fileTypes": ["fex"],
+  "patterns": [
+        { "include": "#comments" },
+        {
+            "name": "string.quoted.double.webfocus",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [
+                { "include": "$self"},
+                { "name": "string.webfocus" },
+                { "match": "." }
+            ]
+        },
+        {
+            "name": "string.quoted.single.webfocus",
+            "begin": "'",
+            "end": "'",
+            "patterns": [
+                { "include": "$self" },
+                { "name": "string.webfocus" },
+                { "match": "."}
+            ]
+        },
+        {
+            "name": "variable.language.webfocus",
+            "match": "\\s*[\\&]\\w*\\b"
+        },
+        {
+            "name": "variable.language.webfocus",
+            "match": "(\\b|-)?[\\&]\\w*\\b"
+        }
+        {
+            "name": "keyword.operator.webfocus",
+            "match": "^-?(ACROSS|ACTUAL|ALIAS|ALL|AND|AS|BY|CASE|CENTER|CLEAR|COM(MIT|PUTE)|CONTAINS|CTRAN|DECODE|DEFINE|DISK|DOS|EDIT|END(CASE|REPEAT|SYTLE)|EXCLUDES|EXIT)\\b"
+        },
+        {
+            "name": "keyword.operator.webfocus",
+            "match": "^-?(FIELD(NAME|TYPE)?|FILE(DEF|NAME)?|FOLD-LINE|FOOTING|FOR(MAT)?|FROM|GE(TTOK)?|GRAPH|HEADING|HOLD|IN|INCLUDE|INDEX|JOIN|LAST|LIST|LJUST|MISSING|MORE|MULTILINES)\\b"
+        },
+        {
+            "name": "keyword.operator.webfocus",
+            "match": "^-?(NEW(-NOT-OLD)?|NO(PRINT|SPLIT)|OLD(-AND-NEW|-NOR-NEW|-NOT-NEW|-OR-NEW)?|OMITS|ON|OR|PAGE-BREAK|PCHOLD|POSIT|PRINT|RE(CAP|COMPUTE|PAGE)|RUN)\\b"
+        },
+        {
+            "name": "keyword.operator.webfocus",
+            "match": "^-?(SEG(MENT|TYPE)|SET|SKIP-LINE|STYLE|SUB(-TOTAL|FOOT|HEAD|TOTAL)|SUFFIX|SUM(MARIZE)?|TABLE(F)?|TO(TAL)?|UNDER-LINE|USAGE|WHEN|WHERE)\\b"
+        },
+        {
+            "name": "storage.modifier.webfocus",
+            "match": "\\b(ELSE|END|EQ|GE|GOTO|GT|IF|IS|LT|LE|NE)\\b"
+        },
+        {
+            "name": "support.function.webfocus",
+            "match": "SQL(MSS|ORA|OUT)?|-WRITE|SERVER"
+        }
+  ],
+  "repository": {
+        "comments": {
+            "patterns": [
+                {
+                    "captures": {
+                        "1": {
+                            "name": "punctuation.definition.comment.webfocus"
+                        }
+                    },
+                    "match": "(^-\\*).*$\\n?",
+                    "name": "comment.line.dash-star.webfocus"
+                }
+            ]
+        }
+   },
+  "uuid": "4773db26-1acb-4922-9d73-bd41662a97b5"
+}

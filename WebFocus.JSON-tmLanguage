@@ -25,7 +25,7 @@
         },
         {
             "name": "Variable.parameter.webfocus",
-            "match": "([\\&]\\w*\\b)([\\.])((EXISTS|TYPE|LENGTH))",
+            "match": "([\\&]\\w*\\b)([\\.])((EXISTS|TYPE|LENGTH|EVAL))",
             "captures": {
                 "3": {"name": "variable.parameter.webfocus"},
                 "1": {"name": "variable.language.webfocus"}

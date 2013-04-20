@@ -77,7 +77,7 @@
 			<key>comment</key>
 			<string>The WebFocus functions to provide information about the variables.</string>
 			<key>match</key>
-			<string>([\&amp;]\w*\b)([\.])((EXISTS|TYPE|LENGTH))</string>
+			<string>([\&amp;]\w*\b)([\.])((EXISTS|TYPE|LENGTH|EVAL))</string>
 			<key>name</key>
 			<string>Variable.parameter.webfocus</string>
 		</dict>

@@ -61,10 +61,31 @@
 			</array>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>variable.language.webfocus</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>variable.parameter.webfocus</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>The WebFocus functions to provide information about the variables.</string>
 			<key>match</key>
-			<string>\s*[\&amp;]\w*\b</string>
+			<string>([\&amp;]\w*\b)([\.])((EXISTS|TYPE|LENGTH))</string>
 			<key>name</key>
-			<string>keyword.operator.webfocus</string>
+			<string>Variable.parameter.webfocus</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(\b|-)?[\&amp;]\w*\b</string>
+			<key>name</key>
+			<string>variable.language.webfocus</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -85,14 +106,22 @@
 			<string>keyword.operator.webfocus</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.webfocus</string>
+				</dict>
+			</dict>
 			<key>match</key>
-			<string>^-?(SEG(MENT|TYPE)|SET|SKIP-LINE|STYLE|SUB(-TOTAL|FOOT|HEAD|TOTAL)|SUFFIX|SUM(MARIZE)?|TABLE(F)?|TO(TAL)?|UNDER-LINE|USAGE|WHEN|WHERE)\b</string>
+			<string>((^-)?)(SEG(MENT|TYPE)|SET|SKIP-LINE|STYLE|SUB(-TOTAL|FOOT|HEAD|TOTAL)|SUFFIX|SUM(MARIZE)?|TABLE(F)?|TO(TAL)?|UNDER-LINE|USAGE|WHEN|WHERE)\b</string>
 			<key>name</key>
 			<string>keyword.operator.webfocus</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(ELSE|END|EQ|GE|GOTO|GT|IF|IS|LT|LE|NE)\b</string>
+			<string>(\b|[^-])(ELSE|END|EQ|GE|GOTO|GT|IF|IS|LT|LE|NE|THEN)\b</string>
 			<key>name</key>
 			<string>storage.modifier.webfocus</string>
 		</dict>

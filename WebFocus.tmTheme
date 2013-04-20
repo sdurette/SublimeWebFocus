@@ -1,6 +1,5 @@
 <!--
 WebFocus - Rich syntax highlighting of WebFocus in Sublime Text 2
-Copyright (C) 2013 Steven Durette
 
 This theme is based off of the Monokai theme that comes with Sublime Text 2.
 
@@ -12,39 +11,6 @@ You should have received a copy of the GNU General Public License along with thi
 
 Steven Durette can be contacted at <https://github.com/sdurette/SublimeWebFocus>
 
-Color Codes for development purposes
-#f9f9f9 - White
-#000000 - Black
-#d8e1ee - Pale Blue
-#ffff74 - Banana
-#0000ff - Blueberry (blue)
-#339966 - Teal
-#9a290a - Burnt Umber
-#ff0000 - Scarlet (red)
-#ff8000 - Scarlet
-#800000 - Burnt Umber ?
-#008080 - Teal
-#ffffff - White
-#008000 - Clover
-#80003f - Maroon
-#004080 - Deep Blue
-#0000C0 - Midnight
-#005c00 - Dark Clover
-#dc322f - red
-#8200ff - Mauve
-#268bd2 - Sky
-#657b83 - baase00 ?
-#b58900 - Yellow
-#6c71c4 - Violet
-#2aa198 - Cyan
-#d33682 - Magenta
-#859900 - Green
-#ffe4e2 - Rouge
-#daffce - Apple
-#0080ff - Aqua
-#808080 - Nickel
-#ff00ff - Pink
-#eee8d5 - ?
 -->
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -459,7 +425,7 @@ Color Codes for development purposes
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#808080</string><!-- Nickel -->
+				<string>#ff00ff</string><!-- Clover -->
 			</dict>
 		</dict>
 		<!-- fex variables -->
@@ -467,13 +433,26 @@ Color Codes for development purposes
 			<key>name</key>
 			<string>fex: variables</string>
 			<key>scope</key>
-			<string>variable.language.webfocus, variable.parameter.webfocus</string>
+			<string>variable.language.webfocus</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#268bd2</string><!-- sky -->
+				<string>#657b83</string><!-- -->
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>fex: variables</string>
+			<key>scope</key>
+			<string>variable.parameter.webfocus</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#ffff74</string><!-- Yellow -->
 			</dict>
 		</dict>
 		<!-- fex keywords -->
@@ -500,6 +479,20 @@ Color Codes for development purposes
 				<string>bold</string>
 				<key>foreground</key>
 				<string>#008080</string><!-- teal -->
+			</dict>
+		</dict>
+		<!-- storage modifier -->
+		<dict>
+			<key>name</key>
+			<string>fex: storage function</string>
+			<key>scope</key>
+			<string>storage.modifier.webfocus</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#268bd2</string><!-- Sky -->
 			</dict>
 		</dict>
 	</array>

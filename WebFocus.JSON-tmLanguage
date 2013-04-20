@@ -24,13 +24,18 @@
             ]
         },
         {
-            "name": "variable.language.webfocus",
-            "match": "\\s*[\\&]\\w*\\b"
+            "name": "Variable.parameter.webfocus",
+            "match": "([\\&]\\w*\\b)([\\.])((EXISTS|TYPE|LENGTH))",
+            "captures": {
+                "3": {"name": "variable.parameter.webfocus"},
+                "1": {"name": "variable.language.webfocus"}
+            },
+            "comment": "The WebFocus functions to provide information about the variables."
         },
         {
             "name": "variable.language.webfocus",
             "match": "(\\b|-)?[\\&]\\w*\\b"
-        }
+        },
         {
             "name": "keyword.operator.webfocus",
             "match": "^-?(ACROSS|ACTUAL|ALIAS|ALL|AND|AS|BY|CASE|CENTER|CLEAR|COM(MIT|PUTE)|CONTAINS|CTRAN|DECODE|DEFINE|DISK|DOS|EDIT|END(CASE|REPEAT|SYTLE)|EXCLUDES|EXIT)\\b"
@@ -45,11 +50,14 @@
         },
         {
             "name": "keyword.operator.webfocus",
-            "match": "^-?(SEG(MENT|TYPE)|SET|SKIP-LINE|STYLE|SUB(-TOTAL|FOOT|HEAD|TOTAL)|SUFFIX|SUM(MARIZE)?|TABLE(F)?|TO(TAL)?|UNDER-LINE|USAGE|WHEN|WHERE)\\b"
+            "match": "((^-)?)(SEG(MENT|TYPE)|SET|SKIP-LINE|STYLE|SUB(-TOTAL|FOOT|HEAD|TOTAL)|SUFFIX|SUM(MARIZE)?|TABLE(F)?|TO(TAL)?|UNDER-LINE|USAGE|WHEN|WHERE)\\b",
+            "captures": {
+                "2": {"name": "keyword.operator.webfocus"}
+            }
         },
         {
             "name": "storage.modifier.webfocus",
-            "match": "\\b(ELSE|END|EQ|GE|GOTO|GT|IF|IS|LT|LE|NE)\\b"
+            "match": "(\\b|[^-])(ELSE|END|EQ|GE|GOTO|GT|IF|IS|LT|LE|NE|THEN)\\b"
         },
         {
             "name": "support.function.webfocus",
